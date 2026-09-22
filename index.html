@@ -3,70 +3,997 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <title>Crave Corner</title>
+
+    <link rel="stylesheet" href="foodie.css" />
   </head>
+
   <body>
+    <!-- ==================== HOME ==================== -->
+
     <section id="home" class="hero">
-      <video class="background-video" autoplay muted loop>
-        <source src="5897416-uhd_3840_2160_25fps.mp4" type="video/mp4" />
+      <video class="background-video" autoplay muted loop playsinline>
+        <source src="./5897416-uhd_3840_2160_25fps.mp4" type="video/mp4" />
       </video>
 
+      <div class="video-overlay"></div>
+
+      <!-- Navbar -->
+
       <header class="navbar">
-        <div class="logo">🍔 Foodie</div>
+        <div class="logo">🍔 Crave Corner</div>
 
         <nav>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+
+            <li>
+              <a href="#menu">Menu</a>
+            </li>
+
+            <li>
+              <a href="#about">About</a>
+            </li>
+
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
         </nav>
       </header>
 
+      <!-- Hero Content -->
+
       <div class="hero-text">
-        <h1>Delicious Food, Made With Love</h1>
+        <h1>Welcome to Crave Corner</h1>
 
         <p>
-          Fresh ingredients, delicious flavors and unforgettable experiences.
+          Where every craving finds its corner — fresh ingredients, bold flavors
+          and unforgettable meals.
         </p>
 
-        <a href="#menu" class="menu-btn">Explore Menu</a>
+        <a href="#menu" class="menu-btn"> Explore Menu </a>
       </div>
     </section>
+
+    <!-- ==================== MENU ==================== -->
+
     <section id="menu" class="menu-section">
       <div class="section-title">
         <p>OUR MENU</p>
+
         <h2>Explore Our Delicious Food</h2>
       </div>
 
-      <div class="menu-container">
-        <div class="food-card">
-          <img src="pizza.jpg" alt="Pizza" />
-          <h3>Pizza</h3>
-          <p>Freshly baked pizza with delicious toppings.</p>
-          <span>₹299</span>
-          <a href="#" class="order-btn">Order Now</a>
+      <!-- Category Navigation -->
+
+      <div class="category-tabs">
+        <a href="#mains">Mains</a>
+
+        <a href="#coffee">Coffee</a>
+
+        <a href="#milkshakes">Milkshakes</a>
+
+        <a href="#cool-drinks">Cool Drinks</a>
+
+        <a href="#bakery">Bakery</a>
+
+        <a href="#fried-chicken"> Fried Chicken &amp; Fast Food </a>
+      </div>
+
+      <!-- ==================== MAINS ==================== -->
+
+      <div id="mains" class="menu-category">
+        <div class="category-heading">
+          <h3>Mains</h3>
+
+          <span> Full meals to fill you up </span>
         </div>
 
-        <div class="food-card">
-          <img src="burger.jpg" alt="Burger" />
-          <h3>Burger</h3>
-          <p>Juicy burger prepared with fresh ingredients.</p>
-          <span>₹199</span>
-          <a href="#" class="order-btn">Order Now</a>
+        <div class="menu-container">
+          <!-- Pizza -->
+
+          <div class="food-card">
+            <img src="./pizza.jpg" alt="Pizza" />
+
+            <h3>Pizza</h3>
+
+            <p>Freshly baked pizza with delicious toppings.</p>
+
+            <span>₹299</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <!-- Burger -->
+
+          <div class="food-card">
+            <img src="./burger.jpg" alt="Burger" />
+
+            <h3>Burger</h3>
+
+            <p>Juicy burger prepared with fresh ingredients.</p>
+
+            <span>₹199</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <!-- Pasta -->
+
+          <div class="food-card">
+            <img src="./pasta.jpg" alt="Pasta" />
+
+            <h3>Pasta</h3>
+
+            <p>Delicious pasta with rich and creamy flavors.</p>
+
+            <span>₹249</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <!-- Veg Noodles -->
+
+          <div class="food-card">
+            <img
+              src="./pexels-kunal-lakhotia-781256899-28674525.jpg"
+              alt="Veg Noodles"
+            />
+
+            <h3>Veg Noodles</h3>
+
+            <p>Stir-fried noodles tossed with fresh vegetables.</p>
+
+            <span>₹189</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <!-- Fried Rice -->
+
+          <div class="food-card">
+            <img src="./pexels-meguchi-343871.jpg" alt="Veg Fried Rice" />
+
+            <h3>Veg Fried Rice</h3>
+
+            <p>Wok-tossed rice with veggies and a hint of spice.</p>
+
+            <span>₹179</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <!-- Grilled Sandwich -->
+
+          <div class="food-card">
+            <img
+              src="./pexels-jonathanborba-2983102.jpg"
+              alt="Grilled Sandwich"
+            />
+
+            <h3>Grilled Sandwich</h3>
+
+            <p>Toasted sandwich stuffed with cheese and veggies.</p>
+
+            <span>₹149</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <!-- Veg Manchurian -->
+
+          <div class="food-card">
+            <img
+              src="./pexels-roman-odintsov-5339083.jpg"
+              alt="Veg Manchurian"
+            />
+
+            <h3>Veg Manchurian</h3>
+
+            <p>Crispy veg balls tossed in a tangy Indo-Chinese sauce.</p>
+
+            <span>₹169</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <!-- Club Sandwich -->
+
+          <div class="food-card">
+            <img
+              src="./pexels-franco-monsalvo-252430633-18020344.jpg"
+              alt="Club Sandwich"
+            />
+
+            <h3>Club Sandwich</h3>
+
+            <p>Triple-layered sandwich loaded with veggies and cheese.</p>
+
+            <span>₹179</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <!-- Chicken Roll -->
+
+          <div class="food-card">
+            <img src="./pexels-shootsaga-33430554.jpg" alt="Chicken Roll" />
+
+            <h3>Chicken Roll</h3>
+
+            <p>Spiced chicken rolled in a soft flatbread.</p>
+
+            <span>₹189</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <!-- Paneer Wrap -->
+
+          <div class="food-card">
+            <img
+              src="./pexels-karina-ustiuzhanina-313369745-13778563.jpg"
+              alt="Paneer Wrap"
+            />
+
+            <h3>Paneer Wrap</h3>
+
+            <p>Grilled paneer wrapped with fresh veggies and sauce.</p>
+
+            <span>₹169</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== COFFEE ==================== -->
+
+      <div id="coffee" class="menu-category">
+        <div class="category-heading">
+          <h3>Coffee</h3>
+
+          <span> Hot &amp; cold coffee, brewed fresh </span>
         </div>
 
-        <div class="food-card">
-          <img src="pasta.jpg" alt="Pasta" />
-          <h3>Pasta</h3>
-          <p>Delicious pasta with rich and creamy flavors.</p>
-          <span>₹249</span>
-          <a href="#" class="order-btn">Order Now</a>
+        <div class="menu-container">
+          <div class="food-card">
+            <img
+              src="./pexels-magda-ehlers-pexels-31139336.jpg"
+              alt="Cappuccino"
+            />
+
+            <h3>Cappuccino</h3>
+
+            <p>Rich espresso with steamed milk foam.</p>
+
+            <span>₹149</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-pushkar-kumar-32881714-34541593.jpg"
+              alt="Cold Coffee"
+            />
+
+            <h3>Cold Coffee</h3>
+
+            <p>Chilled coffee blended with ice cream.</p>
+
+            <span>₹179</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-marta-dzedyshko-1042863-2067432.jpg"
+              alt="Espresso"
+            />
+
+            <h3>Espresso</h3>
+
+            <p>Strong and bold single shot of espresso.</p>
+
+            <span>₹119</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-medi-balazi-78269-244407.jpg"
+              alt="Caffe Latte"
+            />
+
+            <h3>Caffe Latte</h3>
+
+            <p>Smooth espresso balanced with silky steamed milk.</p>
+
+            <span>₹159</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img src="./pexels-helloaesthe-15569296.jpg" alt="Hot Chocolate" />
+
+            <h3>Hot Chocolate</h3>
+
+            <p>Rich and creamy chocolate, served piping hot.</p>
+
+            <span>₹139</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img src="./pexels-peterdanthy-33975489.jpg" alt="Americano" />
+
+            <h3>Americano</h3>
+
+            <p>Espresso diluted with hot water for a lighter taste.</p>
+
+            <span>₹129</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-leonardo-aquino-246345118-27666788.jpg"
+              alt="Mocha"
+            />
+
+            <h3>Mocha</h3>
+
+            <p>Espresso with steamed milk and rich chocolate syrup.</p>
+
+            <span>₹169</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-ubeydulah-besir-koroglu-2155166096-35819401.jpg"
+              alt="South Indian Filter Coffee"
+            />
+
+            <h3>Filter Coffee</h3>
+
+            <p>Classic South Indian filter coffee, strong and frothy.</p>
+
+            <span>₹79</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-bentonphotocinema-15086185.jpg"
+              alt="Caramel Macchiato"
+            />
+
+            <h3>Caramel Macchiato</h3>
+
+            <p>Espresso layered with vanilla milk and caramel drizzle.</p>
+
+            <span>₹179</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-nguy-n-ti-n-th-nh-2150376175-32823311.jpg"
+              alt="Iced Vanilla Coffee"
+            />
+
+            <h3>Iced Vanilla Coffee</h3>
+
+            <p>Chilled coffee with a smooth vanilla syrup finish.</p>
+
+            <span>₹159</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== MILKSHAKES ==================== -->
+
+      <div id="milkshakes" class="menu-category">
+        <div class="category-heading">
+          <h3>Milkshakes</h3>
+
+          <span> Thick, creamy and cold </span>
+        </div>
+
+        <div class="menu-container">
+          <div class="food-card">
+            <img
+              src="./pexels-abolfazl-zarghami-465901605-17942953.jpg"
+              alt="Chocolate Milkshake"
+            />
+
+            <h3>Chocolate Milkshake</h3>
+
+            <p>Thick chocolate shake topped with cream.</p>
+
+            <span>₹159</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img src="./pexels-farhad-8743859.jpg" alt="Oreo Milkshake" />
+
+            <h3>Oreo Milkshake</h3>
+
+            <p>Creamy shake blended with Oreo cookies.</p>
+
+            <span>₹169</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-goksun-baris-gokalp-2158208031-35225807.jpg"
+              alt="Mango Milkshake"
+            />
+
+            <h3>Mango Milkshake</h3>
+
+            <p>Fresh mango pulp blended with cold milk.</p>
+
+            <span>₹149</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-i-brahim-hakki-ucman-174353-3342301.jpg"
+              alt="Strawberry Milkshake"
+            />
+
+            <h3>Strawberry Milkshake</h3>
+
+            <p>Fresh strawberries blended into a creamy shake.</p>
+
+            <span>₹159</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img src="./pexels-alleksana-6463661.jpg" alt="Vanilla Milkshake" />
+
+            <h3>Vanilla Milkshake</h3>
+
+            <p>Classic and creamy, made with real vanilla.</p>
+
+            <span>₹139</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-kpaukshtite-1146758.jpg"
+              alt="Butterscotch Milkshake"
+            />
+
+            <h3>Butterscotch Milkshake</h3>
+
+            <p>Creamy shake with crunchy caramelized bits.</p>
+
+            <span>₹169</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-lorena-martinez-1218850-11381485.jpg"
+              alt="KitKat Milkshake"
+            />
+
+            <h3>KitKat Milkshake</h3>
+
+            <p>Chocolatey shake loaded with crushed wafer bars.</p>
+
+            <span>₹179</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-minchephoto-7491906.jpg"
+              alt="Banana Milkshake"
+            />
+
+            <h3>Banana Milkshake</h3>
+
+            <p>Thick and naturally sweet banana shake.</p>
+
+            <span>₹139</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-alleksana-6463661.jpg"
+              alt="Cookies and Cream Milkshake"
+            />
+
+            <h3>Cookies &amp; Cream Milkshake</h3>
+
+            <p>Vanilla shake blended with chunks of chocolate cookies.</p>
+
+            <span>₹169</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img src="./pexels-jdgromov-7091588.jpg" alt="Pista Milkshake" />
+
+            <h3>Pista Milkshake</h3>
+
+            <p>Rich pistachio shake with a nutty, creamy finish.</p>
+
+            <span>₹179</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== COOL DRINKS ==================== -->
+
+      <div id="cool-drinks" class="menu-category">
+        <div class="category-heading">
+          <h3>Cool Drinks</h3>
+
+          <span> Refreshing sips for a hot day </span>
+        </div>
+
+        <div class="menu-container">
+          <div class="food-card">
+            <img src="./pexels-enginakyurt-9996446.jpg" alt="Fresh Lime Soda" />
+
+            <h3>Fresh Lime Soda</h3>
+
+            <p>Chilled lime soda, sweet or salty.</p>
+
+            <span>₹79</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img src="./pexels-anhdanghihi-16373066.jpg" alt="Iced Tea" />
+
+            <h3>Iced Tea</h3>
+
+            <p>Refreshing peach iced tea.</p>
+
+            <span>₹99</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img src="./pexels-ron-lach-8879617.jpg" alt="Chilled Soda" />
+
+            <h3>Chilled Soda</h3>
+
+            <p>Fizzy soda served ice cold.</p>
+
+            <span>₹49</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-shameel-mukkath-3421394-11009203.jpg"
+              alt="Watermelon Juice"
+            />
+
+            <h3>Watermelon Juice</h3>
+
+            <p>Freshly squeezed and served chilled.</p>
+
+            <span>₹89</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-roy-muriithi-1065015100-30591633.jpg"
+              alt="Virgin Mojito"
+            />
+
+            <h3>Virgin Mojito</h3>
+
+            <p>Fresh mint and lime with a fizzy soda kick.</p>
+
+            <span>₹109</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-stephen-leonardi-587681991-30900665.jpg"
+              alt="Fresh Orange Juice"
+            />
+
+            <h3>Fresh Orange Juice</h3>
+
+            <p>Freshly squeezed oranges, no added sugar.</p>
+
+            <span>₹99</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-jack-baghel-2199968-20422165.jpg"
+              alt="Spiced Buttermilk"
+            />
+
+            <h3>Spiced Buttermilk</h3>
+
+            <p>Cooling yogurt drink with curry leaves and spices.</p>
+
+            <span>₹59</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-freestockpro-11398730.jpg"
+              alt="Tender Coconut Water"
+            />
+
+            <h3>Tender Coconut Water</h3>
+
+            <p>Naturally sweet and refreshingly chilled.</p>
+
+            <span>₹69</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-omair-tabikh-301813574-31242124.jpg"
+              alt="Blue Lagoon Mocktail"
+            />
+
+            <h3>Blue Lagoon Mocktail</h3>
+
+            <p>A fruity, fizzy blue mocktail that's fun to sip.</p>
+
+            <span>₹119</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-yousif-idrees-867185224-19676020.jpg"
+              alt="Rose Milk"
+            />
+
+            <h3>Rose Milk</h3>
+
+            <p>Chilled milk with fragrant rose syrup.</p>
+
+            <span>₹79</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== BAKERY ==================== -->
+
+      <div id="bakery" class="menu-category">
+        <div class="category-heading">
+          <h3>Bakery</h3>
+
+          <span> Freshly baked, every morning </span>
+        </div>
+
+        <div class="menu-container">
+          <!-- Fixed: food-card -->
+
+          <div class="food-card">
+            <img
+              src="./pexels-eat-kubba-15863701-7935283.jpg"
+              alt="Blueberry Muffin"
+            />
+
+            <h3>Blueberry Muffin</h3>
+
+            <p>Freshly baked, soft and moist.</p>
+
+            <span>₹99</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img src="./pexels-daka-20819705.jpg" alt="Chocolate Croissant" />
+
+            <h3>Chocolate Croissant</h3>
+
+            <p>Buttery, flaky, filled with chocolate.</p>
+
+            <span>₹109</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-lucasguizo-6044053.jpg"
+              alt="Choco Chip Cookies"
+            />
+
+            <h3>Choco Chip Cookies</h3>
+
+            <p>Crunchy on the outside, chewy inside.</p>
+
+            <span>₹79</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-sajjad-naqvi-1348573-38638101.jpg"
+              alt="Glazed Donut"
+            />
+
+            <h3>Glazed Donut</h3>
+
+            <p>Soft, fluffy donut with a sweet glaze coating.</p>
+
+            <span>₹69</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-seher-engel-415018873-15030594.jpg"
+              alt="Cheesecake Slice"
+            />
+
+            <h3>Cheesecake Slice</h3>
+
+            <p>Rich and creamy, on a buttery biscuit base.</p>
+
+            <span>₹149</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-skyler-ewing-266953-8927931.jpg"
+              alt="Chocolate Brownie"
+            />
+
+            <h3>Chocolate Brownie</h3>
+
+            <p>Fudgy, dense and packed with chocolate chunks.</p>
+
+            <span>₹119</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-lara-k-77373467-8651023.jpg"
+              alt="Cinnamon Roll"
+            />
+
+            <h3>Cinnamon Roll</h3>
+
+            <p>Soft, swirled roll topped with cream cheese icing.</p>
+
+            <span>₹99</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="./pexels-rawan-ali-133113257-28122545.jpg"
+              alt="Red Velvet Cupcake"
+            />
+
+            <h3>Red Velvet Cupcake</h3>
+
+            <p>Moist cupcake with a swirl of cream cheese frosting.</p>
+
+            <span>₹89</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== FRIED CHICKEN ==================== -->
+
+      <div id="fried-chicken" class="menu-category">
+        <div class="category-heading">
+          <h3>Fried Chicken &amp; Fast Food</h3>
+
+          <span> Crispy, spicy and quick </span>
+        </div>
+
+        <div class="menu-container">
+          <div class="food-card">
+            <img
+              src="pexels-chicken-mackay-3652946-5474676.jpg"
+              alt="Fried Chicken Bucket"
+            />
+
+            <h3>Crispy Fried Chicken Bucket</h3>
+
+            <p>6-piece crispy fried chicken, golden and crunchy.</p>
+
+            <span>₹349</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img src="pexels-tiennguyen-28182512.jpg" alt="Chicken Popcorn" />
+
+            <h3>Chicken Popcorn</h3>
+
+            <p>Bite-sized crispy chicken poppers.</p>
+
+            <span>₹179</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="pexels-dhiraj-jain-207743066-12737661.jpg"
+              alt="Chicken Wrap"
+            />
+
+            <h3>Chicken Wrap</h3>
+
+            <p>Crispy chicken rolled with fresh veggies and sauce.</p>
+
+            <span>₹159</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img src="pexels-jahratreza-39551216.jpg" alt="Chicken Nuggets" />
+
+            <h3>Chicken Nuggets</h3>
+
+            <p>Golden fried nuggets, crispy on the outside.</p>
+
+            <span>₹149</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img src="pexels-530123908-29150162.jpg" alt="French Fries" />
+
+            <h3>French Fries</h3>
+
+            <p>Crispy golden fries, salted just right.</p>
+
+            <span>₹99</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="pexels-qamar-rehman-94539242-11354487.jpg"
+              alt="Crispy Chicken Burger"
+            />
+
+            <h3>Crispy Chicken Burger</h3>
+
+            <p>Crunchy fried chicken fillet with mayo and lettuce.</p>
+
+            <span>₹199</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img src="pexels-rsapmech-11485199.jpg" alt="Peri Peri Fries" />
+
+            <h3>Peri Peri Fries</h3>
+
+            <p>Crispy fries tossed in a spicy peri peri seasoning.</p>
+
+            <span>₹129</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="pexels-eric-moura-859101902-33068077.jpg"
+              alt="Crispy Chicken Strips"
+            />
+
+            <h3>Crispy Chicken Strips</h3>
+
+            <p>Tender chicken strips fried to a golden crunch.</p>
+
+            <span>₹189</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img
+              src="pexels-jonathanborba-18866156.jpg"
+              alt="Loaded Cheese Fries"
+            />
+
+            <h3>Loaded Cheese Fries</h3>
+
+            <p>Crispy fries topped with melted cheese and sauces.</p>
+
+            <span>₹169</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
+
+          <div class="food-card">
+            <img src="pexels-anshography-18803174.jpg" alt="Chicken Momos" />
+
+            <h3>Chicken Momos</h3>
+
+            <p>Steamed dumplings served with a spicy chutney.</p>
+
+            <span>₹139</span>
+
+            <a href="#" class="order-btn"> Order Now </a>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- ==================== ABOUT ==================== -->
+
     <section id="about" class="about-section">
       <div class="about-content">
         <p class="section-subtitle">ABOUT US</p>
@@ -74,14 +1001,18 @@
         <h2>Good Food, Great Memories</h2>
 
         <p>
-          At Foodie, we believe that good food brings people together. We use
-          fresh ingredients and delicious flavors to create meals that make
-          every moment special.
+          At Crave Corner, we believe that good food brings people together.
+          From cheesy pizzas and juicy burgers to fresh coffee and warm bakes,
+          every dish is made with fresh ingredients and a lot of love — because
+          every craving deserves its own corner.
         </p>
 
-        <a href="#contact" class="about-btn">Contact Us</a>
+        <a href="#contact" class="about-btn"> Contact Us </a>
       </div>
     </section>
+
+    <!-- ==================== CONTACT ==================== -->
+
     <section id="contact" class="contact-section">
       <div class="contact-content">
         <p class="section-subtitle">GET IN TOUCH</p>
